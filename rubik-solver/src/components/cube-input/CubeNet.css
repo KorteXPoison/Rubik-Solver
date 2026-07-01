@@ -1,0 +1,25 @@
+.cube-net {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: fit-content;
+}
+
+.cube-net__row {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+/* placeholder cell to keep the cross shape aligned */
+.cube-net__cell {
+  width: 84px;
+  height: 84px;
+}
+
+@media (max-width: 480px) {
+  .cube-net__cell {
+    width: 66px;
+    height: 66px;
+  }
+}

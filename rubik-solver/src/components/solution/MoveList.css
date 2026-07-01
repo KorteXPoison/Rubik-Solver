@@ -1,0 +1,80 @@
+.move-list {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.move-list__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.move-list__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.move-list__copy {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: color 0.12s, background 0.12s;
+}
+
+.move-list__copy:hover {
+  color: var(--text);
+  background: var(--border);
+}
+
+.move-list__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.move-list__badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-raised);
+  color: var(--text);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s, color 0.1s;
+}
+
+.move-list__badge:hover {
+  background: var(--border);
+}
+
+.move-list__badge--active {
+  background: var(--accent-orange);
+  border-color: var(--accent-orange);
+  color: #15171c;
+}
+
+.move-list__badge--past {
+  opacity: 0.42;
+}
+
+.move-list__badge-num {
+  font-size: 10px;
+  opacity: 0.6;
+  font-family: var(--font-mono);
+}

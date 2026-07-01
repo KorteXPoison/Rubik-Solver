@@ -1,0 +1,13 @@
+.page-container {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+}
+
+@media (max-width: 640px) {
+  .page-container {
+    padding: 28px 16px 48px;
+  }
+}

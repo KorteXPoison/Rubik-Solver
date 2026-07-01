@@ -1,0 +1,35 @@
+.face-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  width: 84px;
+  height: 84px;
+  padding: 4px;
+  background: #0c0d10;
+  border-radius: 6px;
+}
+
+.face-grid__cell {
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.face-grid__cell:not(:disabled):hover {
+  filter: brightness(1.1);
+  transform: scale(1.06);
+}
+
+.face-grid__cell--center {
+  cursor: default;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 480px) {
+  .face-grid {
+    width: 66px;
+    height: 66px;
+  }
+}
